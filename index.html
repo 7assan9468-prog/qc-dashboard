@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#17212B">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="جودة المنتج التام">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAADCklEQVR4nO3cMW7TUACA4QbBwMLauawdOjMiDoA4KeoBECMzF+AQLAwgwYCEEPRPk9p+dtLvU5dUkWPp/X5+tqPsLq+uL+AuT9beAbZLHCRxkMRBEgdJHCRxkMRBEgdJHCRxkMRBEgdJHCRxkMRBEgdJHCRxkMRBEgdJHCRxkMRBEgdJHCRxkMRBEgdJHCRxkJ6uvQPc4/Pbn3+/vLndDftoM8em/VPGnf9Zzs4v+zzAmKN5Twdj5g8zx9HGHM37tzlm/hDHcWpU5h2tQ7Y2oA8L0iPcezQfMtuPXDRMdD5xLL0O2MjRPNKZxHHnOmCWPs5svI9yDnHsWQcc2MdjLmCPk7+UvXdc//SxnQJmWZoMuJo97Ti2M95/zDhm7nOcgJvb3e+/Q9457+cO+JQ9TnLmWGLCmL46GXOfdOSzlZOJY5Yglrt+GTlmwywbx5TqZ5welr7ncZZlXCwaxwOOsBXPF/xvqTgOPDc/uIYDN6KMKRaJY/wE8HjWASPNH8daa4VHsg4YaVu3z6eMqBpmt34cBnWzVotDE9vn9jlp/jjGP4NgIYvMHPvHXhmnYqnTyupPFJluhvsc71/kqvbl6+9/v/zy8Vm9893XHxN3g9kte7Wypwa2z9UKSRwkcZDEQRIHSRwkcZDEQRIHSRwkcZDEQRIHSRwkcZDEQRIHSRwkcZDEQRIHSRwkcZDEQRIHSRyk9X/Z5yjfXr2ZvpHnnz5M38hjYOYgiYMkDpI4SOIgiYMkDpI4SOIgiYMkDpI4SOIgiYMkDpI4SOIgiYMkDtKJfYd0JN9XNXOQxEESB0kcJHGQxEESB0kcJHGQxEESB0kcJHGQPJXdhG0+ATZzkMRBEgdJHCRxkMRBEgdJHCRxkMRBEgdJHCRxkMRBEgdJHCRxkMRBEgdJHCRxkMRBEgdJHCRxkMRBEgdJHCRxkMRB2l1eXa+9D2yUmYMkDpI4SOIgiYMkDpI4SOIgiYMkDpI4SOIgiYMkDpI4SOIgiYMkDpI4SOIgiYMkDpI4SOIgiYMkDpI4SOIg/QLSEKJbuiZCGAAAAABJRU5ErkJggg==">
+<title>لوحة جودة المنتج التام – درفلة حديد التسليح</title>
+<style>
+:root{
+  --ink:#17212B;
+  --paper:#E8EBED;
+  --panel:#FFFFFF;
+  --line:#CBD2D8;
+  --muted:#56626E;
+  --steel:#0E5A6E;
+  --steel-soft:#DCEBEF;
+  --prime:#1F7A4D;
+  --hold:#B77A00;
+  --scrap:#C62F2F;
+  --scrap-soft:#FBE4E2;
+  --hold-soft:#FBF0D5;
+  --prime-soft:#DDF0E5;
+  --r:6px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Segoe UI","Noto Kufi Arabic","Cairo",Tahoma,Arial,sans-serif;
+  font-size:15px;line-height:1.6;
+}
+.num{direction:ltr;unicode-bidi:isolate;display:inline-block;font-variant-numeric:tabular-nums}
+header.top{background:var(--ink);color:#fff;padding:22px 20px 18px;border-bottom:5px solid #E8702A}
+header.top .wrap{max-width:1240px;margin:0 auto;display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;justify-content:space-between}
+header.top h1{margin:0;font-size:24px;font-weight:800;line-height:1.35}
+header.top p{margin:2px 0 0;color:#B9C4CE;font-size:14px}
+header.top .actions{display:flex;gap:8px;flex-wrap:wrap}
+main{max-width:1240px;margin:0 auto;padding:18px 16px 40px;display:grid;gap:18px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:16px}
+.panel h2{margin:0 0 12px;font-size:17px;font-weight:800}
+.panel h2 small{font-weight:500;color:var(--muted);font-size:13px;margin-inline-start:8px}
+
+button,.btn{
+  font:inherit;font-weight:700;cursor:pointer;border-radius:var(--r);border:1px solid transparent;
+  padding:9px 16px;min-height:42px;
+}
+.btn-primary{background:var(--steel);color:#fff}
+.btn-primary:hover{background:#0A4757}
+.btn-ghost{background:transparent;color:#fff;border-color:#4B5A68}
+.btn-ghost:hover{background:#243240}
+.btn-light{background:#fff;color:var(--ink);border-color:var(--line)}
+.btn-light:hover{background:#F2F5F7}
+.btn-danger-link{background:none;border:none;color:var(--scrap);padding:4px 8px;min-height:0;font-weight:700}
+:focus-visible{outline:3px solid #E8702A;outline-offset:2px}
+
+label{display:block;font-size:13px;font-weight:700;color:var(--muted);margin-bottom:4px}
+input,select{
+  width:100%;font:inherit;font-size:16px;color:var(--ink);background:#fff;
+  border:1px solid #AAB4BD;border-radius:var(--r);padding:9px 10px;min-height:42px;
+}
+input[readonly]{background:#F0F3F5;color:var(--muted)}
+.form-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px 14px}
+.calc{display:flex;align-items:center;min-height:42px;padding:0 10px;border:1px dashed #AAB4BD;border-radius:var(--r);background:#F7F9FA;font-weight:800;gap:10px}
+.form-actions{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap;align-items:center}
+.err{color:var(--scrap);font-weight:700;font-size:13px}
+
+.badge{display:inline-block;padding:2px 10px;border-radius:999px;font-size:13px;font-weight:800;white-space:nowrap}
+.b-ok{background:var(--prime-soft);color:#14573A}
+.b-bad{background:var(--scrap-soft);color:#9E1F1F}
+.b-hold{background:var(--hold-soft);color:#7A5100}
+.b-idle{background:#EDF0F2;color:var(--muted)}
+
+.filters{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;align-items:end}
+
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+.kpi{background:var(--panel);border:1px solid var(--line);border-inline-start:6px solid var(--steel);border-radius:var(--r);padding:14px 16px}
+.kpi .k-label{font-size:14px;font-weight:700;color:var(--muted)}
+.kpi .k-val{font-size:34px;font-weight:800;line-height:1.2;margin-top:2px}
+.kpi .k-val small{font-size:16px;font-weight:700;color:var(--muted);margin-inline-start:4px}
+.kpi .k-sub{font-size:13px;color:var(--muted);margin-top:2px}
+.kpi.prime{border-inline-start-color:var(--prime)}
+.kpi.reject{border-inline-start-color:var(--scrap)}
+.kpi.dev{border-inline-start-color:#E8702A}
+.kpi.prime .k-val{color:var(--prime)}
+.kpi.reject .k-val{color:var(--scrap)}
+
+.charts-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:18px}
+.chart-scroll{overflow-x:auto}
+.chart-scroll svg{display:block;width:100%;min-width:540px;height:auto}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted);margin:-4px 0 8px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:2px;margin-inline-end:6px;vertical-align:-1px}
+.note{font-size:13px;color:var(--muted);margin:8px 0 0}
+.empty{padding:36px 10px;text-align:center;color:var(--muted)}
+
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r)}
+table{border-collapse:collapse;width:100%;min-width:980px;font-size:14px}
+th,td{padding:8px 10px;text-align:right;border-bottom:1px solid #E3E8EC;white-space:nowrap}
+thead th{background:#F1F4F6;font-size:13px;color:var(--muted);position:sticky;top:0}
+tbody tr:hover{background:#F8FAFB}
+tr.row-bad td{background:#FFF7F6}
+
+#tip{position:fixed;z-index:50;pointer-events:none;background:var(--ink);color:#fff;padding:8px 10px;border-radius:var(--r);font-size:13px;line-height:1.6;max-width:260px;display:none;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+#toast{position:fixed;bottom:18px;inset-inline-start:50%;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 18px;border-radius:var(--r);font-weight:700;display:none;z-index:60}
+
+@media (max-width:600px){
+  header.top{padding:16px 14px 14px}
+  header.top h1{font-size:19px}
+  header.top .actions{width:100%}
+  header.top .actions .btn{flex:1}
+  main{padding:12px 10px 40px;gap:14px}
+  .panel{padding:12px}
+  .kpis{grid-template-columns:1fr 1fr;gap:10px}
+  .kpi{padding:10px 12px}
+  .kpi .k-label{font-size:13px}
+  .kpi .k-val{font-size:26px}
+  .kpi .k-val small{font-size:13px}
+  .kpi .k-sub{font-size:12px}
+  .form-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .chart-scroll svg{min-width:0}
+  #entryPanel .form-actions{position:sticky;bottom:0;z-index:5;background:#fff;margin:14px -12px -12px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));border-top:1px solid var(--line)}
+  #entryPanel #btnAdd{flex:1;min-height:48px}
+  .table-wrap{border:none;overflow:visible}
+  table{min-width:0;display:block}
+  thead{display:none}
+  tbody{display:block}
+  tr{display:block;border:1px solid var(--line);border-radius:var(--r);padding:8px 12px;margin-bottom:10px;background:#fff}
+  tr.row-bad{background:#FFF7F6;border-color:#E9B3AE}
+  tbody tr:hover{background:inherit}
+  td{display:flex;justify-content:space-between;align-items:center;gap:12px;border:none;padding:4px 0;white-space:normal}
+  tr.row-bad td{background:transparent}
+  td[data-label]::before{content:attr(data-label);color:var(--muted);font-size:13px;font-weight:700}
+  td.col-del{justify-content:flex-start;padding-top:6px}
+  td.empty{justify-content:center}
+}
+@media (prefers-reduced-motion:no-preference){
+  .kpi .k-val{transition:color .2s}
+}
+@media print{
+  body{background:#fff}
+  header.top{background:#fff;color:#000;border-bottom:3px solid #000;padding:8px 0}
+  header.top p{color:#333}
+  header.top .actions,#entryPanel,#filterPanel .filter-actions,.col-del,.btn-danger-link{display:none !important}
+  .panel,.kpi{break-inside:avoid;border-color:#888}
+  .chart-scroll{overflow:visible}
+  .chart-scroll svg{min-width:0}
+  .table-wrap{overflow:visible}
+  table{min-width:0;font-size:11px}
+  main{padding:8px 0}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div>
+      <h1>لوحة جودة المنتج التام – درفلة حديد التسليح</h1>
+      <p>متابعة الأوزان والعيوب وحالة الفحص لكل وردية</p>
+    </div>
+    <div class="actions">
+      <button class="btn btn-ghost" id="btnPrint" type="button">طباعة التقرير</button>
+      <button class="btn btn-primary" id="btnCsv" type="button">تصدير Excel / CSV</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1. نموذج الإدخال -->
+  <section class="panel" id="entryPanel" aria-labelledby="entryTitle">
+    <h2 id="entryTitle">تسجيل لوط جديد</h2>
+    <div class="form-grid">
+      <div><label for="fDate">التاريخ</label><input type="date" id="fDate"></div>
+      <div><label for="fShiftIn">الوردية</label>
+        <select id="fShiftIn"><option value="0">الأولى</option><option value="1">الثانية</option><option value="2">الثالثة</option></select></div>
+      <div><label for="fHeat">رقم الشحنة (Heat Number)</label><input type="text" id="fHeat" placeholder="مثال: 26-4416" autocomplete="off"></div>
+      <div><label for="fDiaIn">القطر الاسمي</label>
+        <select id="fDiaIn">
+          <option value="">اختر القطر</option>
+          <option value="10">10 مم</option><option value="12">12 مم</option><option value="16">16 مم</option>
+          <option value="20">20 مم</option><option value="25">25 مم</option><option value="32">32 مم</option>
+        </select></div>
+      <div><label for="fTarget">الوزن القياسي (كجم/م)</label><input type="text" id="fTarget" readonly placeholder="يُملأ تلقائياً"></div>
+      <div><label for="fActual">الوزن الفعلي بالميزان (كجم/م)</label><input type="number" id="fActual" step="0.001" min="0" inputmode="decimal"></div>
+      <div><label>نسبة الحيود في الوزن</label><div class="calc"><span class="num" id="devOut">—</span></div></div>
+      <div><label>تقييم الوزن</label><div class="calc"><span class="badge b-idle" id="wStatusOut">بانتظار الإدخال</span></div></div>
+      <div><label for="fTons">كمية اللوط (طن)</label><input type="number" id="fTons" step="0.1" min="0" inputmode="decimal"></div>
+      <div><label for="fInsp">حالة الفحص النهائية</label>
+        <select id="fInsp"><option value="prime">مقبول Prime</option><option value="hold">محجوز Hold</option><option value="scrap">مرفوض Scrap</option></select></div>
+      <div><label for="fDefect">نوع العيب</label>
+        <select id="fDefect">
+          <option value="none">لا يوجد</option>
+          <option value="fins">زيادات Fins/Overfills</option>
+          <option value="under">نقص Underfills</option>
+          <option value="scabs">قشور وتشققات Scabs/Cracks</option>
+          <option value="roll">علامات درافيل Roll Marks</option>
+          <option value="straight">عدم استقامة Straightness</option>
+          <option value="rib">خلل في الشرشرة Rib Profile</option>
+        </select></div>
+    </div>
+    <div class="form-actions">
+      <button class="btn btn-primary" id="btnAdd" type="button">حفظ اللوط</button>
+      <span class="err" id="formErr" role="alert"></span>
+    </div>
+  </section>
+
+  <!-- فلاتر -->
+  <section class="panel" id="filterPanel" aria-labelledby="filterTitle">
+    <h2 id="filterTitle">الفلاتر <small id="filterInfo"></small></h2>
+    <div class="filters">
+      <div><label for="flDia">القطر</label>
+        <select id="flDia"><option value="">كل الأقطار</option><option value="10">10 مم</option><option value="12">12 مم</option><option value="16">16 مم</option><option value="20">20 مم</option><option value="25">25 مم</option><option value="32">32 مم</option></select></div>
+      <div><label for="flShift">الوردية</label>
+        <select id="flShift"><option value="">كل الورديات</option><option value="0">الأولى</option><option value="1">الثانية</option><option value="2">الثالثة</option></select></div>
+      <div><label for="flFrom">من تاريخ</label><input type="date" id="flFrom"></div>
+      <div><label for="flTo">إلى تاريخ</label><input type="date" id="flTo"></div>
+      <div class="filter-actions"><button class="btn btn-light" id="btnReset" type="button" style="width:100%">إلغاء الفلاتر</button></div>
+    </div>
+  </section>
+
+  <!-- 2. مؤشرات الأداء -->
+  <section class="kpis" aria-label="مؤشرات الأداء الرئيسية">
+    <div class="kpi"><div class="k-label">إجمالي الأطنان المفحوصة</div><div class="k-val"><span class="num" id="kTons">—</span><small>طن</small></div><div class="k-sub" id="kTonsSub"></div></div>
+    <div class="kpi prime"><div class="k-label">نسبة المنتج المقبول (Prime)</div><div class="k-val"><span class="num" id="kPrime">—</span><small>%</small></div><div class="k-sub" id="kPrimeSub"></div></div>
+    <div class="kpi reject"><div class="k-label">نسبة المحجوز والمرفوض</div><div class="k-val"><span class="num" id="kRej">—</span><small>%</small></div><div class="k-sub" id="kRejSub"></div></div>
+    <div class="kpi dev"><div class="k-label">متوسط الحيود في الوزن</div><div class="k-val"><span class="num" id="kDev">—</span><small>%</small></div><div class="k-sub" id="kDevSub"></div></div>
+  </section>
+
+  <!-- الرسوم -->
+  <section class="panel">
+    <h2>مخطط التحكم في الوزن <small>الحيود عن الوزن القياسي لكل لوط بالترتيب الزمني</small></h2>
+    <div class="legend">
+      <span><i style="background:var(--steel)"></i>داخل الحدود</span>
+      <span><i style="background:var(--scrap)"></i>خارج الحدود</span>
+      <span><i style="background:transparent;border-top:2px dashed var(--scrap);height:0;width:16px;vertical-align:3px"></i>حدود ±<span class="num">4.5%</span></span>
+    </div>
+    <div class="chart-scroll" id="chControl"></div>
+    <p class="note">الرسم بالنسبة المئوية حتى تُقارن الأقطار المختلفة على مقياس واحد. مرّر على أي نقطة لمعرفة الوزن الفعلي والقياسي.</p>
+  </section>
+
+  <div class="charts-2">
+    <section class="panel">
+      <h2>مخطط باريتو للعيوب <small>عدد اللوطات لكل عيب</small></h2>
+      <div class="chart-scroll" id="chPareto"></div>
+    </section>
+    <section class="panel">
+      <h2>مقارنة الورديات <small>بالطن</small></h2>
+      <div class="legend">
+        <span><i style="background:var(--prime)"></i>مقبول Prime</span>
+        <span><i style="background:var(--scrap)"></i>محجوز + مرفوض</span>
+      </div>
+      <div class="chart-scroll" id="chShift"></div>
+    </section>
+  </div>
+
+  <!-- السجل -->
+  <section class="panel">
+    <h2>سجل الفحص <small id="logCount"></small></h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr>
+          <th>التاريخ</th><th>الوردية</th><th>رقم الشحنة</th><th>القطر</th>
+          <th>القياسي كجم/م</th><th>الفعلي كجم/م</th><th>الحيود %</th><th>تقييم الوزن</th>
+          <th>الكمية (طن)</th><th>حالة الفحص</th><th>العيب</th><th class="col-del"></th>
+        </tr></thead>
+        <tbody id="logBody"></tbody>
+      </table>
+    </div>
+    <div class="form-actions">
+      <button class="btn btn-light" id="btnSample" type="button">استعادة البيانات الافتراضية</button>
+      <button class="btn btn-light" id="btnClear" type="button">مسح كل السجلات</button>
+    </div>
+  </section>
+</main>
+
+<div id="tip"></div>
+<div id="toast"></div>
+
+<script>
+(function(){
+'use strict';
+
+/* ---------- الإعدادات ---------- */
+const TOL = 4.5; // حد الحيود المسموح (±%)
+const WEIGHTS = {10:0.617, 12:0.888, 16:1.58, 20:2.47, 25:3.85, 32:6.31};
+const SHIFTS = ['الأولى','الثانية','الثالثة'];
+const INSP = {prime:'مقبول Prime', hold:'محجوز Hold', scrap:'مرفوض Scrap'};
+const DEFECT = {
+  none:'لا يوجد', fins:'زيادات Fins/Overfills', under:'نقص Underfills',
+  scabs:'قشور وتشققات Scabs/Cracks', roll:'علامات درافيل Roll Marks',
+  straight:'عدم استقامة Straightness', rib:'خلل في الشرشرة Rib Profile'
+};
+const DEFECT_SHORT = {
+  fins:'زيادات Fins', under:'نقص Underfills', scabs:'قشور وتشققات',
+  roll:'علامات درافيل', straight:'عدم استقامة', rib:'خلل الشرشرة'
+};
+const KEY = 'finalQC.rows.v1';
+let NARROW = window.innerWidth < 600;
+
+/* ---------- أدوات ---------- */
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fmt = (n, d=2) => Number(n).toLocaleString('en-US',{minimumFractionDigits:d, maximumFractionDigits:d});
+const sgn = v => (v>0?'+':'') + fmt(v);
+const shortDate = d => d.slice(5).split('-').reverse().join('/');
+const calcDev = (actual, target) => Math.round(((actual-target)/target)*10000)/100;
+const inSpec = dev => Math.abs(dev) <= TOL;
+const niceMax = v => {
+  if(v<=0) return 10;
+  const p = Math.pow(10, Math.floor(Math.log10(v))), n = v/p;
+  return (n<=1?1: n<=2?2: n<=5?5:10)*p;
+};
+
+/* ---------- البيانات ---------- */
+function mk(id,date,shift,heat,dia,actual,tons,insp,defect){
+  const target = WEIGHTS[dia];
+  return {id,date,shift,heat,dia,target,actual,dev:calcDev(actual,target),tons,insp,defect};
+}
+function sample(){
+  return [
+    mk(1,'2026-11-14',0,'26-4401',12,0.874,58.4,'prime','none'),
+    mk(2,'2026-11-14',0,'26-4402',16,1.612,61.2,'prime','none'),
+    mk(3,'2026-11-14',1,'26-4403',10,0.585,24.6,'hold','under'),
+    mk(4,'2026-11-14',2,'26-4404',20,2.49,66.0,'prime','none'),
+    mk(5,'2026-11-15',0,'26-4405',25,3.97,70.5,'prime','fins'),
+    mk(6,'2026-11-15',1,'26-4406',12,0.931,55.8,'hold','fins'),
+    mk(7,'2026-11-15',2,'26-4407',32,6.27,72.3,'prime','none'),
+    mk(8,'2026-11-16',0,'26-4408',16,1.495,60.0,'scrap','under'),
+    mk(9,'2026-11-16',1,'26-4409',20,2.41,64.7,'prime','roll'),
+    mk(10,'2026-11-16',2,'26-4410',10,0.629,25.1,'hold','straight'),
+    mk(11,'2026-11-17',0,'26-4411',25,3.88,68.9,'prime','none'),
+    mk(12,'2026-11-17',1,'26-4412',12,0.862,57.3,'hold','rib'),
+    mk(13,'2026-11-17',2,'26-4413',32,6.62,71.0,'scrap','scabs'),
+    mk(14,'2026-11-18',0,'26-4414',16,1.585,62.4,'prime','none'),
+    mk(15,'2026-11-18',1,'26-4415',20,2.52,65.8,'hold','roll')
+  ];
+}
+function load(){ try{ const s=localStorage.getItem(KEY); if(s) return JSON.parse(s); }catch(e){} return null; }
+function save(){ try{ localStorage.setItem(KEY, JSON.stringify(rows)); }catch(e){} }
+
+let rows = load() || sample();
+let nextId = rows.reduce((m,r)=>Math.max(m,r.id),0)+1;
+
+/* ---------- الفلاتر ---------- */
+function filtered(){
+  const d=$('flDia').value, s=$('flShift').value, a=$('flFrom').value, b=$('flTo').value;
+  return rows.filter(r =>
+    (!d || String(r.dia)===d) &&
+    (s==='' || String(r.shift)===s) &&
+    (!a || r.date>=a) && (!b || r.date<=b)
+  ).sort((x,y)=> x.date===y.date ? x.id-y.id : (x.date<y.date?-1:1));
+}
+
+/* ---------- المؤشرات ---------- */
+function renderKpis(data){
+  const total = data.reduce((s,r)=>s+r.tons,0);
+  const prime = data.filter(r=>r.insp==='prime').reduce((s,r)=>s+r.tons,0);
+  const hold  = data.filter(r=>r.insp==='hold').reduce((s,r)=>s+r.tons,0);
+  const scrap = data.filter(r=>r.insp==='scrap').reduce((s,r)=>s+r.tons,0);
+  const out = data.filter(r=>!inSpec(r.dev)).length;
+
+  if(!data.length || total<=0){
+    ['kTons','kPrime','kRej','kDev'].forEach(i=>$(i).textContent='—');
+    ['kTonsSub','kPrimeSub','kRejSub','kDevSub'].forEach(i=>$(i).textContent='');
+    return;
+  }
+  $('kTons').textContent = fmt(total,1);
+  $('kTonsSub').textContent = 'عدد اللوطات: ' + data.length;
+  $('kPrime').textContent = fmt(prime/total*100,1);
+  $('kPrimeSub').textContent = fmt(prime,1) + ' طن مقبول';
+  $('kRej').textContent = fmt((hold+scrap)/total*100,1);
+  $('kRejSub').textContent = 'محجوز ' + fmt(hold,1) + ' طن | مرفوض ' + fmt(scrap,1) + ' طن';
+  const avg = data.reduce((s,r)=>s+r.dev,0)/data.length;
+  const absAvg = data.reduce((s,r)=>s+Math.abs(r.dev),0)/data.length;
+  $('kDev').textContent = sgn(avg);
+  $('kDevSub').textContent = 'متوسط القيمة المطلقة ' + fmt(absAvg) + '% | خارج المواصفة: ' + out + ' لوط';
+}
+
+/* ---------- مخطط التحكم ---------- */
+function renderControl(data){
+  const box = $('chControl');
+  if(!data.length){ box.innerHTML = '<div class="empty">لا توجد بيانات مطابقة للفلاتر.</div>'; return; }
+  const W=NARROW?360:720,H=330,m={l:NARROW?40:50,r:NARROW?12:16,t:18,b:56};
+  const iw=W-m.l-m.r, ih=H-m.t-m.b;
+  const lo = Math.min(-6, ...data.map(r=>r.dev)) - 0.6;
+  const hi = Math.max(6, ...data.map(r=>r.dev)) + 0.6;
+  const y = v => m.t + (hi-v)/(hi-lo)*ih;
+  const x = i => m.l + (data.length===1 ? iw/2 : i*iw/(data.length-1));
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="مخطط التحكم في حيود الوزن" style="direction:ltr">`;
+  // نطاق المواصفة
+  s += `<rect x="${m.l}" y="${y(TOL)}" width="${iw}" height="${y(-TOL)-y(TOL)}" fill="#DCEBEF" opacity=".55"/>`;
+  // خطوط الشبكة
+  for(let t=Math.ceil(lo/2)*2; t<=hi; t+=2){
+    s += `<line x1="${m.l}" x2="${W-m.r}" y1="${y(t)}" y2="${y(t)}" stroke="#D6DCE1" stroke-width="1"/>`;
+    s += `<text x="${m.l-8}" y="${y(t)+4}" text-anchor="end" font-size="11" fill="#56626E">${t}%</text>`;
+  }
+  // الحدود
+  s += `<line x1="${m.l}" x2="${W-m.r}" y1="${y(0)}" y2="${y(0)}" stroke="#17212B" stroke-width="1.5"/>`;
+  [TOL,-TOL].forEach(v=>{
+    s += `<line x1="${m.l}" x2="${W-m.r}" y1="${y(v)}" y2="${y(v)}" stroke="#C62F2F" stroke-width="1.6" stroke-dasharray="6 4"/>`;
+    s += `<text x="${W-m.r-4}" y="${y(v)+(v>0?-5:13)}" text-anchor="end" font-size="11" font-weight="700" fill="#C62F2F">${v>0?'+':'−'}${TOL}%</text>`;
+  });
+  // الخط الواصل
+  if(data.length>1){
+    s += `<polyline fill="none" stroke="#0E5A6E" stroke-width="1.8" points="${data.map((r,i)=>x(i)+','+y(r.dev)).join(' ')}"/>`;
+  }
+  // النقاط وعناوين المحور
+  const step = Math.ceil(data.length/(NARROW?5:12));
+  data.forEach((r,i)=>{
+    const bad = !inSpec(r.dev);
+    const tip = `<b>${esc(r.heat)}</b> – ${r.dia} مم<br>${r.date} | الوردية ${SHIFTS[r.shift]}<br>القياسي: ${fmt(r.target,3)} | الفعلي: ${fmt(r.actual,3)}<br>الحيود: ${sgn(r.dev)}%`;
+    s += `<circle cx="${x(i)}" cy="${y(r.dev)}" r="${bad?6:5}" fill="${bad?'#C62F2F':'#0E5A6E'}" stroke="#fff" stroke-width="2" data-tip="${esc(tip)}" tabindex="0"/>`;
+    if(i%step===0){
+      s += `<text x="${x(i)}" y="${H-m.b+18}" text-anchor="middle" font-size="11" fill="#56626E">${shortDate(r.date)}</text>`;
+      s += `<text x="${x(i)}" y="${H-m.b+32}" text-anchor="middle" font-size="11" font-weight="700" fill="#17212B">Ø${r.dia}</text>`;
+    }
+  });
+  s += '</svg>';
+  box.innerHTML = s;
+}
+
+/* ---------- باريتو ---------- */
+function renderPareto(data){
+  const box = $('chPareto');
+  const counts = {};
+  data.forEach(r=>{ if(r.defect!=='none') counts[r.defect]=(counts[r.defect]||0)+1; });
+  const arr = Object.entries(counts).sort((a,b)=>b[1]-a[1]);
+  const total = arr.reduce((s,a)=>s+a[1],0);
+  if(!total){ box.innerHTML = '<div class="empty">لا توجد عيوب مسجلة ضمن الفلاتر الحالية.</div>'; return; }
+  const W=NARROW?360:620,H=330,m={l:NARROW?10:20,r:NARROW?40:46,t:20,b:62};
+  const iw=W-m.l-m.r, ih=H-m.t-m.b;
+  const y = f => m.t + (1-f)*ih;       // f بين 0 و 1
+  const slot = iw/arr.length, bw = Math.min(64, slot*0.6);
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="مخطط باريتو للعيوب" style="direction:ltr">`;
+  for(let p=0;p<=100;p+=20){
+    s += `<line x1="${m.l}" x2="${W-m.r}" y1="${y(p/100)}" y2="${y(p/100)}" stroke="#D6DCE1"/>`;
+    s += `<text x="${W-m.r+8}" y="${y(p/100)+4}" font-size="11" fill="#56626E">${p}%</text>`;
+  }
+  s += `<line x1="${m.l}" x2="${W-m.r}" y1="${y(.8)}" y2="${y(.8)}" stroke="#E8702A" stroke-dasharray="5 4" stroke-width="1.4"/>`;
+  let cum=0, pts=[];
+  arr.forEach(([k,c],i)=>{
+    const cx = m.l + slot*i + slot/2;
+    const h = c/total*ih;
+    cum += c;
+    const tons = data.filter(r=>r.defect===k).reduce((t,r)=>t+r.tons,0);
+    const tip = `<b>${esc(DEFECT[k])}</b><br>${c} لوط (${fmt(c/total*100,1)}%)<br>${fmt(tons,1)} طن<br>التراكمي: ${fmt(cum/total*100,1)}%`;
+    s += `<rect x="${cx-bw/2}" y="${m.t+ih-h}" width="${bw}" height="${h}" fill="${i===0?'#C62F2F':'#0E5A6E'}" rx="2" data-tip="${esc(tip)}" tabindex="0"/>`;
+    s += `<text x="${cx}" y="${m.t+ih-h-6}" text-anchor="middle" font-size="12" font-weight="800" fill="#17212B">${c}</text>`;
+    DEFECT_SHORT[k].split(' ').forEach((w,j)=>{ s += `<text x="${cx}" y="${H-m.b+18+j*14}" text-anchor="middle" font-size="11" fill="#17212B">${esc(w)}</text>`; });
+    pts.push([cx, y(cum/total)]);
+  });
+  s += `<polyline fill="none" stroke="#E8702A" stroke-width="2.2" points="${pts.map(p=>p.join(',')).join(' ')}"/>`;
+  pts.forEach(p=>{ s += `<circle cx="${p[0]}" cy="${p[1]}" r="4" fill="#E8702A" stroke="#fff" stroke-width="1.5"/>`; });
+  s += '</svg>';
+  box.innerHTML = s;
+}
+
+/* ---------- مقارنة الورديات ---------- */
+function renderShifts(data){
+  const box = $('chShift');
+  const acc=[0,0,0], rej=[0,0,0];
+  data.forEach(r=>{ (r.insp==='prime'?acc:rej)[r.shift]+=r.tons; });
+  const mx = Math.max(...acc,...rej);
+  if(!data.length || mx<=0){ box.innerHTML='<div class="empty">لا توجد بيانات مطابقة للفلاتر.</div>'; return; }
+  const top = niceMax(mx*1.08);
+  const W=NARROW?360:620,H=330,m={l:NARROW?38:46,r:10,t:20,b:44};
+  const iw=W-m.l-m.r, ih=H-m.t-m.b;
+  const y = v => m.t + (1-v/top)*ih;
+  const slot=iw/3, bw=Math.min(56, slot*0.28);
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="مقارنة الورديات" style="direction:ltr">`;
+  for(let i=0;i<=4;i++){
+    const v=top*i/4;
+    s += `<line x1="${m.l}" x2="${W-m.r}" y1="${y(v)}" y2="${y(v)}" stroke="#D6DCE1"/>`;
+    s += `<text x="${m.l-8}" y="${y(v)+4}" text-anchor="end" font-size="11" fill="#56626E">${fmt(v,0)}</text>`;
+  }
+  for(let i=0;i<3;i++){
+    const cx = m.l+slot*i+slot/2;
+    [[acc[i],'#1F7A4D','مقبول',-bw-3],[rej[i],'#C62F2F','محجوز + مرفوض',3]].forEach(([v,col,lab,off])=>{
+      const h = v/top*ih;
+      const tip = `<b>الوردية ${SHIFTS[i]}</b><br>${lab}: ${fmt(v,1)} طن`;
+      s += `<rect x="${cx+off}" y="${m.t+ih-h}" width="${bw}" height="${h}" fill="${col}" rx="2" data-tip="${esc(tip)}" tabindex="0"/>`;
+      if(v>0) s += `<text x="${cx+off+bw/2}" y="${m.t+ih-h-6}" text-anchor="middle" font-size="${NARROW?10:11}" font-weight="800" fill="#17212B">${fmt(v,1)}</text>`;
+    });
+    s += `<text x="${cx}" y="${H-m.b+22}" text-anchor="middle" font-size="13" font-weight="700" fill="#17212B">الوردية ${SHIFTS[i]}</text>`;
+  }
+  s += '</svg>';
+  box.innerHTML = s;
+}
+
+/* ---------- الجدول ---------- */
+function renderTable(data){
+  $('logCount').textContent = data.length + ' سجل من ' + rows.length;
+  if(!data.length){
+    $('logBody').innerHTML = '<tr><td colspan="12" class="empty">لا توجد سجلات. أضف لوطاً من النموذج بالأعلى.</td></tr>';
+    return;
+  }
+  $('logBody').innerHTML = data.map(r=>{
+    const ok = inSpec(r.dev);
+    const ic = r.insp==='prime'?'b-ok':(r.insp==='hold'?'b-hold':'b-bad');
+    return `<tr class="${ok?'':'row-bad'}">
+      <td data-label="التاريخ"><span class="num">${r.date}</span></td>
+      <td data-label="الوردية">${SHIFTS[r.shift]}</td>
+      <td data-label="رقم الشحنة"><span class="num">${esc(r.heat)}</span></td>
+      <td data-label="القطر">${r.dia} مم</td>
+      <td data-label="القياسي كجم/م"><span class="num">${fmt(r.target,3)}</span></td>
+      <td data-label="الفعلي كجم/م"><span class="num">${fmt(r.actual,3)}</span></td>
+      <td data-label="الحيود %"><span class="num">${sgn(r.dev)}</span></td>
+      <td data-label="تقييم الوزن"><span class="badge ${ok?'b-ok':'b-bad'}">${ok?'مطابق':'خارج المواصفة'}</span></td>
+      <td data-label="الكمية (طن)"><span class="num">${fmt(r.tons,1)}</span></td>
+      <td data-label="حالة الفحص"><span class="badge ${ic}">${INSP[r.insp]}</span></td>
+      <td data-label="العيب">${esc(DEFECT[r.defect])}</td>
+      <td class="col-del"><button class="btn-danger-link" type="button" data-del="${r.id}" aria-label="حذف اللوط ${esc(r.heat)}">حذف</button></td>
+    </tr>`;
+  }).join('');
+}
+
+function render(){
+  const data = filtered();
+  const active = $('flDia').value || $('flShift').value!=='' || $('flFrom').value || $('flTo').value;
+  $('filterInfo').textContent = active ? 'الفلتر مفعّل – الأرقام والرسوم تعرض ' + data.length + ' من ' + rows.length + ' لوط' : '';
+  renderKpis(data); renderControl(data); renderPareto(data); renderShifts(data); renderTable(data);
+}
+
+/* ---------- النموذج ---------- */
+function updateCalc(){
+  const dia = $('fDiaIn').value;
+  const t = dia ? WEIGHTS[dia] : null;
+  $('fTarget').value = t ? fmt(t,3) : '';
+  const a = parseFloat($('fActual').value);
+  const out = $('devOut'), st = $('wStatusOut');
+  if(t && a>0){
+    const dev = calcDev(a,t);
+    out.textContent = sgn(dev)+'%';
+    const ok = inSpec(dev);
+    st.textContent = ok ? 'مطابق' : 'خارج المواصفة';
+    st.className = 'badge ' + (ok?'b-ok':'b-bad');
+  }else{
+    out.textContent='—'; st.textContent='بانتظار الإدخال'; st.className='badge b-idle';
+  }
+}
+function toast(msg){
+  const t=$('toast'); t.textContent=msg; t.style.display='block';
+  clearTimeout(toast._h); toast._h=setTimeout(()=>t.style.display='none',2200);
+}
+function addRow(){
+  const err=$('formErr'); err.textContent='';
+  const date=$('fDate').value, heat=$('fHeat').value.trim(), dia=$('fDiaIn').value;
+  const actual=parseFloat($('fActual').value), tons=parseFloat($('fTons').value);
+  if(!date) return err.textContent='أدخل التاريخ.';
+  if(!heat) return err.textContent='أدخل رقم الشحنة.';
+  if(!dia) return err.textContent='اختر القطر.';
+  if(!(actual>0)) return err.textContent='أدخل الوزن الفعلي بالكيلوجرام لكل متر.';
+  if(!(tons>0)) return err.textContent='أدخل كمية اللوط بالطن.';
+  rows.push(mk(nextId++, date, parseInt($('fShiftIn').value,10), heat, parseInt(dia,10), actual, tons, $('fInsp').value, $('fDefect').value));
+  save(); render();
+  $('fHeat').value=''; $('fActual').value=''; $('fTons').value='';
+  $('fInsp').value='prime'; $('fDefect').value='none';
+  updateCalc(); toast('تم حفظ اللوط'); $('fHeat').focus();
+}
+
+/* ---------- التصدير ---------- */
+function exportCsv(){
+  const data = filtered();
+  if(!data.length){ toast('لا توجد سجلات للتصدير'); return; }
+  const head = ['التاريخ','الوردية','رقم الشحنة','القطر (مم)','الوزن القياسي (كجم/م)','الوزن الفعلي (كجم/م)','الحيود %','تقييم الوزن','الكمية (طن)','حالة الفحص','نوع العيب'];
+  const q = v => '"' + String(v).replace(/"/g,'""') + '"';
+  const lines = [head.map(q).join(',')];
+  data.forEach(r=>{
+    lines.push([r.date,SHIFTS[r.shift],r.heat,r.dia,r.target,r.actual,r.dev,inSpec(r.dev)?'مطابق':'خارج المواصفة',r.tons,INSP[r.insp],DEFECT[r.defect]].map(q).join(','));
+  });
+  const blob = new Blob(['\uFEFF'+lines.join('\r\n')], {type:'text/csv;charset=utf-8'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'final_qc_' + new Date().toISOString().slice(0,10) + '.csv';
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+  toast('تم تصدير ' + data.length + ' سجل');
+}
+
+/* ---------- التلميحات ---------- */
+const tip = $('tip');
+function showTip(e){
+  const el = e.target.closest && e.target.closest('[data-tip]');
+  if(!el){ tip.style.display='none'; return; }
+  tip.innerHTML = el.getAttribute('data-tip');
+  tip.style.display='block';
+  const w = tip.offsetWidth, h = tip.offsetHeight;
+  let px = e.clientX - w/2, py = e.clientY - h - 14;
+  px = Math.max(8, Math.min(px, window.innerWidth - w - 8));
+  if(py<8) py = e.clientY + 18;
+  tip.style.left = px+'px'; tip.style.top = py+'px';
+}
+document.addEventListener('pointerover', showTip);
+document.addEventListener('pointermove', showTip);
+document.addEventListener('pointerdown', showTip);
+document.addEventListener('scroll', ()=>tip.style.display='none', true);
+
+/* ---------- الربط ---------- */
+['flDia','flShift','flFrom','flTo'].forEach(id=>$(id).addEventListener('input', render));
+$('btnReset').addEventListener('click', ()=>{
+  $('flDia').value=''; $('flShift').value=''; $('flFrom').value=''; $('flTo').value=''; render();
+});
+['fDiaIn','fActual'].forEach(id=>$(id).addEventListener('input', updateCalc));
+$('btnAdd').addEventListener('click', addRow);
+['fHeat','fActual','fTons'].forEach(id=>$(id).addEventListener('keydown', e=>{ if(e.key==='Enter'){ e.preventDefault(); addRow(); }}));
+$('btnCsv').addEventListener('click', exportCsv);
+$('btnPrint').addEventListener('click', ()=>window.print());
+$('logBody').addEventListener('click', e=>{
+  const b = e.target.closest('[data-del]'); if(!b) return;
+  const id = parseInt(b.getAttribute('data-del'),10);
+  const r = rows.find(x=>x.id===id);
+  if(r && confirm('حذف اللوط ' + r.heat + ' ؟')){ rows = rows.filter(x=>x.id!==id); save(); render(); toast('تم الحذف'); }
+});
+$('btnSample').addEventListener('click', ()=>{
+  if(confirm('سيتم استبدال السجلات الحالية بالبيانات الافتراضية. متابعة؟')){ rows=sample(); nextId=16; save(); render(); }
+});
+$('btnClear').addEventListener('click', ()=>{
+  if(confirm('سيتم مسح كل السجلات. متابعة؟')){ rows=[]; nextId=1; save(); render(); }
+});
+
+let rt; window.addEventListener('resize',()=>{ clearTimeout(rt); rt=setTimeout(()=>{ const n=window.innerWidth<600; if(n!==NARROW){ NARROW=n; render(); } },200); });
+const now = new Date();
+$('fDate').value = now.getFullYear()+'-'+String(now.getMonth()+1).padStart(2,'0')+'-'+String(now.getDate()).padStart(2,'0');
+updateCalc();
+render();
+})();
+</script>
+</body>
+</html>
